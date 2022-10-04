@@ -1,0 +1,21 @@
+{
+    "haeKaikki": [
+        "select tunniste,nimi,tyyppi,suoritin,hinta from tietokone"
+    ],
+    "hae": [
+        "select tunniste,nimi,tyyppi,suoritin,hinta from tietokone",
+        "where tunniste=?"
+    ],
+    "lisaa": [
+        "insert into tietokone (tunniste,nimi,tyyppi,suoritin,hinta)",
+        "values(?,?,?,?,?)"
+    ],
+    "paivita": [
+        "update tietokone set nimi=?,tyyppi=?, suoritin=?, hinta=?",
+        "where tunniste=?"
+    ],
+    "poista": [
+        "delete from tietokone where tunniste=?"
+    ],
+    "perusavain": "tunniste"
+}
